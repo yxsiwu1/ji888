@@ -466,8 +466,8 @@ ${alipayCount > 0 ? `- 支付宝导入: ${alipayCount} 只` : ''}
 **基金代码**: ${fund.code}
 
 **实时估值**
-- 当前净值: ${nav.toFixed(4)}
-- 估算净值: ${estimate.toFixed(4)}
+- 当前净值: ${nav?.toFixed(4)}
+- 估算净值: ${estimate?.toFixed(4)}
 - 今日涨跌: ${growth > 0 ? '+' : ''}${growth.toFixed(2)}%
 - 更新时间: ${'updateTime' in fund ? fund.updateTime : '--:--'}
 ${hasAlipay ? `
